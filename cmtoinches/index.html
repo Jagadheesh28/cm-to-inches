@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert cm to inches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="head">
+                <h2>cm to inches</h2>
+            </div>
+            <div class="value">
+                <input type="Number" id="input" placeholder="Length in cm">
+            </div>
+            <div class="button" onclick="convert()">
+                <button>Submit</button>
+            </div>
+            <div id="result">
+
+            </div>
+        </form>
+        <script>
+            const form = document.getElementById("form")
+            form.addEventListener("submit",(event)=>{
+                event.preventDefault()
+                const cmvalue = Number(document.getElementById("input").value)
+                const inchvalue = cmvalue / 2.54
+                const result = document.getElementById("result")
+                result.innerHTML = inchvalue
+            }) 
+        </script>
+    </div>
+</body>
+
+</html>

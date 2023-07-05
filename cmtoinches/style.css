@@ -1,0 +1,45 @@
+body{
+    background:linear-gradient(to left,rgb(182, 206, 87),rgb(29, 244, 162));
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+form{
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 50%;
+    background:linear-gradient(to right,rgb(182, 206, 87),rgb(29, 244, 162));
+    box-shadow: 5px 10px yellowgreen;
+}
+h2{
+    margin-left: 80px;
+    color:black;
+    font-size: 30px;
+}
+input{
+    margin-left: 70px;
+    padding: 8px;
+}
+button{
+    width: 50%;
+    margin-left: 80px;
+    color: black;
+    font-size: 15px ;
+    margin-top: 30px;
+    padding:10px 30px ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color:rgb(248, 248, 166);
+}
+button:hover{
+    color: hotpink;
+    background-color: skyblue;
+}
+#result{
+    margin-left: 80px;
+    margin-top: 20px;
+   
+}
